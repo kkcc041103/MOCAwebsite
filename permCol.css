@@ -1,0 +1,173 @@
+head{
+  position: absolute;
+  z-index: 10;
+}
+
+h1 {
+  text-align: center;
+  padding:30px 15px 10px;
+  font:Helvetica;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  display: inline-block;
+  list-style: none;
+  font-size: 30px;
+  border: none;
+  padding:30px 15px 10px;
+  cursor: pointer;
+}
+
+* {
+   margin:0px;
+   padding: 0px;
+   font:Helvetica;
+
+ }
+
+#sidebar{
+   position:fixed;
+   width: 500px;
+   height:100%;
+   background:#000000;
+   left: -500px;
+   clip-path: none;
+   transition: all 500ms linear;
+ }
+
+
+#sidebar.active {
+  left: 0px;
+}
+
+#sidebar.close {
+  left: -500px;
+}
+
+#sidebar ul li {
+  color: #ffffff;
+  list-style: none;
+  font-size: 30px;
+  padding:30px 15px 10px;
+
+}
+
+#sidebar .toggle-btn {
+  cursor: pointer;
+  position: absolute;
+  left: 530px;
+  top: 20px;
+}
+
+#sidebar.active .toggle-btn span{
+  display: none;
+}
+
+#sidebar.close .toggle-btn span{
+  display: block;
+}
+
+
+#sidebar .toggle-btn span{
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #000000;
+  margin: 5px 0px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.slideshow{
+  width: 75%;
+  overflow: hidden;
+}
+
+.middle{
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+}
+
+.nav{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  curser: pointer;
+}
+
+input[name="ex"]{
+  visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.5s;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#ex1:checked ~ .s1{
+  margin-left: 0;
+}
+
+#ex2:checked ~ .s1{
+  margin-left: -20%;
+}
+
+#ex3:checked ~ .s1{
+  margin-left: -40%;
+}

@@ -1,0 +1,116 @@
+h1 {
+  text-align: center;
+  padding:30px 15px 10px;
+  font:Helvetica;
+}
+
+h2 {
+  text-align: center;
+  size: 15px;
+  padding:30px 15px 10px;
+  font:Helvetica;
+}
+
+p{
+  text-align: center;
+  size: 15px;
+  padding:30px 15px 10px;
+  font:Helvetica;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  display: inline-block;
+  list-style: none;
+  font-size: 30px;
+  border: none;
+  padding:30px 15px 10px;
+  cursor: pointer;
+}
+
+* {
+   margin:0px;
+   padding: 0px;
+   font:Helvetica;
+
+ }
+
+#sidebar{
+   position:fixed;
+   width: 500px;
+   height:100%;
+   background:#000000;
+   left: -500px;
+   clip-path: none;
+   transition: all 500ms linear;
+ }
+
+
+#sidebar.active {
+  left: 0px;
+}
+
+#sidebar.close {
+  left: -500px;
+}
+
+#sidebar ul li {
+  color: #ffffff;
+  list-style: none;
+  font-size: 30px;
+  padding:30px 15px 10px;
+
+}
+
+#sidebar .toggle-btn {
+  cursor: pointer;
+  position: absolute;
+  left: 530px;
+  top: 20px;
+}
+
+#sidebar.active .toggle-btn span{
+  display: none;
+}
+
+#sidebar.close .toggle-btn span{
+  display: block;
+}
+
+
+#sidebar .toggle-btn span{
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #000000;
+  margin: 5px 0px;
+}
