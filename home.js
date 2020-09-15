@@ -1,10 +1,10 @@
 
 function toggleSidebar(){
-  document.getElementById("sidebar").classList.toggle('active');
+  document.getElementById("sidebar").classList = "active";
 
 }
 
 function closeSidebar(){
-  document.getElementById("sidebar").classList.toggle('close');
+  document.getElementById("sidebar").classList = "close"; 
 
 }
